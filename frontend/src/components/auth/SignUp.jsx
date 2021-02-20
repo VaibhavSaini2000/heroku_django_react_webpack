@@ -41,7 +41,7 @@ const SignUp = () => {
           <Grid item container spacing={1}>
             <Grid item xs={12}>
               <TextField
-                label="Name"
+                label="Username"
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}

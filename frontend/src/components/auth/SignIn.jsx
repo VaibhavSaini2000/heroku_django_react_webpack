@@ -21,7 +21,7 @@ const SignIn = () => {
     if (email && password) {
       dispatch(login(email, password));
     } else {
-      setError("invalid email and password");
+      setError("invalid username and password");
     }
   };
 
@@ -37,7 +37,7 @@ const SignIn = () => {
           <Grid item container spacing={1}>
             <Grid item xs={12}>
               <TextField
-                label="Email"
+                label="Username"
                 type="text"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -86,7 +86,7 @@ const SignIn = () => {
             </Grid>
           </Grid>
           {/* Footer */}
-          <Grid item container>
+          {/* <Grid item container>
             <Grid item xs={12}>
               <Typography variant="body2" align="center">
                 Don't have a profile yet?
@@ -97,7 +97,7 @@ const SignIn = () => {
                 Create one now for free
               </Typography>
             </Grid>
-          </Grid>
+          </Grid> */}
         </Grid>
       </form>
     </Container>
